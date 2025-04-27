@@ -1,0 +1,35 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Add slight lift effect on card hover */
+.card:hover {
+  transform: translateY(-5px); /* small move up */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* nice shadow */
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease; /* smooth image zoom */
+}
+
+/* Zoom the image on hover */
+.card:hover img {
+  transform: scale(1.05); /* zoom the image */
+}
